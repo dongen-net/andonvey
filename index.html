@@ -3,108 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andon Vey &middot; The Khalzam Trilogy</title>
-  <meta name="description" content="Andon Vey is the author of the Khalzam Trilogy, an epic fantasy of desert magic, lost resonance, and the price of power. Book one: The Silent Mirror.">
-  <meta property="og:title" content="Andon Vey &middot; The Khalzam Trilogy">
-  <meta property="og:description" content="Epic fantasy of thirst, of power that hangs on water, and of what will be asked of a boy who carries a stone.">
-  <meta property="og:type" content="website">
+  <title>Andon Vey</title>
+  <meta name="description" content="Andon Vey, author of the Khalzam Trilogy. Andon Vey, auteur van de Khalzam-trilogie.">
   <link rel="icon" type="image/svg+xml" href="/assets/img/mirrorstone.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="nl" href="/nl/">
+  <link rel="alternate" hreflang="x-default" href="/en/">
+  <script>
+    (function () {
+      var lang;
+      try { lang = localStorage.getItem('andonvey-lang'); } catch (e) {}
+      if (!lang) {
+        lang = (navigator.language || navigator.userLanguage || 'en').substring(0, 2).toLowerCase();
+      }
+      var href = (lang === 'nl') ? '/nl/' : '/en/';
+      if (window.location.pathname !== href) {
+        window.location.replace(href);
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    body { display: flex; align-items: center; justify-content: center; min-height: 60vh; text-align: center; }
+    .start { color: var(--sand-dim); font-size: 1.1rem; }
+    .start a { color: var(--copper-light); }
+    .start .sep { color: var(--sand-muted); margin: 0 0.6rem; }
+  </style>
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="page nav">
-      <a class="brand" href="/">Andon Vey</a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="/books.html">Books</a></li>
-          <li><a href="/reading-order.html">Reading Order</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="page">
-      <p class="eyebrow">The Khalzam Trilogy</p>
-      <h1>Andon Vey</h1>
-      <p class="tagline">Author of epic fantasy about thirst, about power that hangs on water, and about what remains of a person once others begin to retell their story.</p>
-      <div class="divider"></div>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section class="section">
-    <div class="page">
-      <p class="section-label">The Trilogy</p>
-      <div class="books-grid">
-        <div class="book-card">
-          <a href="/the-silent-mirror.html"><img src="/assets/img/cover-the-silent-mirror.jpg" alt="The Silent Mirror, book one of the Khalzam Trilogy"></a>
-          <h2 class="book-title"><a href="/the-silent-mirror.html">The Silent Mirror</a></h2>
-          <p class="book-sub">Book One</p>
-          <p class="status">Coming Soon</p>
-        </div>
-        <div class="book-card">
-          <img src="/assets/img/cover-the-labyrinth-of-runes.jpg" alt="The Labyrinth of Runes, book two of the Khalzam Trilogy">
-          <h2 class="book-title">The Labyrinth of Runes</h2>
-          <p class="book-sub">Book Two</p>
-          <p class="status">Coming Later</p>
-        </div>
-        <div class="book-card">
-          <img src="/assets/img/cover-the-mirror-falls-silent.jpg" alt="The Mirror Falls Silent, book three of the Khalzam Trilogy">
-          <h2 class="book-title">The Mirror Falls Silent</h2>
-          <p class="book-sub">Book Three</p>
-          <p class="status">Coming Later</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section class="section">
-    <div class="page book-feature">
-      <img src="/assets/img/cover-the-silent-mirror.jpg" alt="The Silent Mirror book cover">
-      <div class="book-copy">
-        <h2>The Silent Mirror</h2>
-        <p class="kicker">Book One of the Khalzam Trilogy</p>
-        <p>On Khalzam, two suns hang in the sky, and everything that makes life possible lies deep beneath the sand. Tariq hears it running: the stone around his neck trembles with the water veins under the desert. As long as he can follow that rhythm, he has a place among his people.</p>
-        <p>Then, at the Water Rite, something opens that will not close again, and he walks into the dunes that very night.</p>
-        <p>On the far side of the desert lies a city on black basalt, where water is counted and strangers are weighed. There someone bends over his stone and tells him what no one in the oasis ever said. Behind him, all the way from the caravan, walks someone who knows exactly what that stone is worth.</p>
-        <p>The prophecy has a second half. No one speaks it aloud.</p>
-        <p class="prophecy">And when the Mirror breaks, the river heart will sink into darkness.</p>
-        <p>
-          <span class="pill">Epic Fantasy</span>
-          <span class="pill">Coming of Age</span>
-          <span class="pill">Desert Magic</span>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section class="section">
-    <div class="page">
-      <p class="section-label">About the Author</p>
-      <p style="max-width:52em; color:var(--sand-dim);">Andon Vey comes from a country that is flat and wet. Water there is something you pump away, guard, keep in check &mdash; never something you look for. Perhaps that is why he writes about thirst. One question will not let him go: what is left of a person once others begin to retell their story?</p>
-      <p style="margin-top:22px;"><a href="/about.html" style="color:var(--copper-light); letter-spacing:0.14em; text-transform:uppercase; font-size:0.78rem; text-decoration:none; border-bottom:1px solid var(--copper); padding-bottom:2px;">Read more</a></p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="page footer-inner">
-      <p>&copy; 2026 Andon Vey</p>
-      <p>The <span class="footer-run">Khalzam Trilogy</span></p>
-    </div>
-  </footer>
-
+  <div class="start">
+    <p>Andon Vey &middot; <a href="/en/">English</a><span class="sep">|</span><a href="/nl/">Nederlands</a></p>
+  </div>
 </body>
 </html>
