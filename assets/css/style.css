@@ -83,6 +83,41 @@ body {
   border-bottom-color: var(--copper);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 6px;
+  padding-left: 22px;
+  border-left: 1px solid var(--rule);
+}
+
+.lang-switch a {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--sand-muted);
+  text-decoration: none;
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.lang-switch a:hover { color: var(--sand); }
+
+.lang-switch a.active {
+  color: var(--copper-light);
+  border-color: var(--copper);
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -343,4 +378,6 @@ body {
   .book-feature img, .about-grid img { max-width: 300px; margin: 0 auto; }
   .nav { flex-direction: column; gap: 14px; }
   .nav-links { gap: 18px; flex-wrap: wrap; }
+  .nav-right { flex-direction: column; align-items: flex-start; gap: 12px; width: 100%; }
+  .lang-switch { margin-left: 0; padding-left: 0; border-left: 0; }
 }
